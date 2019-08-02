@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="ID1"/>&emsp;
+<input type="text" id="ID2"/><br>
+<input type="button" onclick="checkTong()" value="Addition(+)"/> &emsp;
+<input type="button" onclick="checkHieu()" value="Subtraction(-)"/>&emsp;
+<input type="button" onclick="checkTich()" value="Multiplication(*)"/>&emsp;
+<input type="button" onclick="checkThuong()" value="Division(/)">&emsp;
+<p id="ID3"></p>
+<script>
+    function checkTong() {
+        let a = document.getElementById("ID1").value;
+        let b = document.getElementById("ID2").value;
+        c = parseFloat(a) + parseFloat(b);
+        document.getElementById("ID3").innerHTML = c;
+    }
+    function checkHieu() {
+        let a = document.getElementById("ID1").value;
+        let b = document.getElementById("ID2").value;
+        c = parseFloat(a) - parseFloat(b);
+        document.getElementById("ID3").innerHTML = c;
+    }
+    function checkTich() {
+        let a = document.getElementById("ID1").value;
+        let b = document.getElementById("ID2").value;
+        c = parseFloat(a) * parseFloat(b);
+        document.getElementById("ID3").innerHTML = c;
+    }
+    function checkThuong() {
+        let a = document.getElementById("ID1").value;
+        let b = document.getElementById("ID2").value;
+        c = parseFloat(a) / parseFloat(b);
+        document.getElementById("ID3").innerHTML = c;
+    }
+</script>
+</body>
+</html>
